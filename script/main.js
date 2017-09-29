@@ -42,6 +42,8 @@ theHeading.classList.add(this.id);
 theSubhead.firstChild.nodeValue = objectIndex.headline;
 theSeasonText.firstChild.nodeValue = objectIndex.text;
 
+console.log(this.id);
+
 appliedClass = this.id;
 }
 
@@ -49,6 +51,10 @@ theImages.forEach(function(element, index) {
 // loop through the images and add event handling to each one
 element.addEventListener('click', changeElements, false);
 });
+
+//document.querySelector('#spring').click();
+
+
 
 theSubhead.firstChild.nodeValue = dynamicContent['spring'].headline;
 theSeasonText.firstChild.nodeValue = dynamicContent['spring'].text;
